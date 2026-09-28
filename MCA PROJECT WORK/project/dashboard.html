@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Spot Prediction System</title>
+
+    <!-- Font & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #2c6fb7, #4fa3d1);
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            width: 600px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h1 {
+            color: #1e4f8a;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            background-color: #2c6fb7;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            background-color: #1e4f8a;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Welcome to Black Spot Prediction System</h1>
+        <p>This dashboard will help you track accident zones using real-time GPS data.</p>
+
+        <div class="buttons">
+            <button class="btn" onclick="location.href='map.html'">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                View Live Map
+            </button>
+
+            <button class="btn" onclick="location.href='Black_spot_app.html'">
+                <i class="fa-solid fa-route"></i>
+                Directions
+            </button>
+
+            <button class="btn" onclick="logout()">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Logout
+</button>
+
+<script>
+function logout(){
+    alert("Logged out successfully");
+    window.location.href = "login.html";
+}
+</script>
+
+        </div>
+    </div>
+
+</body>
+</html>

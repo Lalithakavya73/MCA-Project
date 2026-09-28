@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Zone Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background: linear-gradient(135deg, #e8f0f2, #f5f4ea);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background:  linear-gradient(to right, #f1e7da, #dee6ec);
+            border: 2px solid black;
+            padding: 110px;
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h2 {
+            margin: 4px 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .header p {
+            margin: 3px 0;
+            font-size: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .buttons button {
+            padding: 10px 25px;
+            margin: 0 15px;
+            font-size: 16px;
+            border: 1px solid gray;
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #cfcfcf;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            font-size: 20px;
+        }
+
+        .footer div {
+            width: 45%;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+
+        .logo-left {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logos -->
+    <img src="NSRIT Logo.jpg" class="logo-left" alt="Left Logo">
+
+    <!-- Header Section -->
+    <div class="header">
+        <h2>NADIMPALLI SATYANARAYANA RAJU </h2>
+        <h2>INSTITUTE OF TECHNOLOGY (Autonomous) </h2>
+        <p>Approved by AICET, New Delhi & Permanently Affiliated to JNTU - Gurajada, Vizianagaram </p>
+        <p>Recognized under Section 2(f) & 12(B) of the UGC Act, 1956| Accredited by NAAC 'A' Grade</p>
+        <p>SONTYAM, VISAKHAPATNAM - 531 173 </p>
+        <p><b>Department of Computer Applications</b></p>
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+        Black Zone Detection
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button onclick="location.href='index.html'">PROCEED</button>
+        <button onclick="exitPage()">EXIT</button>
+
+<script>
+function exitPage() {
+    if(window.close) {
+        window.close();
+    alert("Thank you for using Black Zone Detection Project. Please close the tab manually. Auto-close not permitted");
+    }
+}
+</script>
+
+
+    </div>
+
+    <!-- Footer Details -->
+    <div class="footer">
+        <div>
+            <b>PROJECT GUIDE:</b><br>
+            Mr. K. RAMA KRISHNA<br>
+            ASSOCIATE PROFESSOR
+        </div>
+
+        <div style="text-align:right;">
+            <b>BY</b><br>
+            NAME: NAKKINA LALITHA KAVYA<br>
+            COURSE: MCA (2024-2026)<br>
+            ROLL NO: 24NU1F0048
+        </div>
+    </div>
+
+    <div class="page-number">1</div>
+
+</div>
+
+</body>
+</html>
